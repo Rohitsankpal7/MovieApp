@@ -11,6 +11,12 @@
 		DBE914B02D10906200144576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE914AB2D10906200144576 /* Assets.xcassets */; };
 		DBE914B12D10906200144576 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE914AC2D10906200144576 /* ContentView.swift */; };
 		DBE914B22D10906200144576 /* MovieAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE914AD2D10906200144576 /* MovieAppApp.swift */; };
+		DBE914BE2D10921700144576 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE914BD2D10920700144576 /* Movie.swift */; };
+		DBE914C02D10926600144576 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE914BF2D10926600144576 /* MovieRepository.swift */; };
+		DBE914C22D1092B400144576 /* MovieApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE914C12D1092B400144576 /* MovieApiService.swift */; };
+		DBE914C42D10933700144576 /* MovieRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE914C32D10933700144576 /* MovieRepositoryImplementation.swift */; };
+		DBE914C62D10936B00144576 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE914C52D10936B00144576 /* MovieListViewModel.swift */; };
+		DBE914C82D1093B100144576 /* MovieListViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE914C72D1093B100144576 /* MovieListViewItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +44,13 @@
 		DBE914AB2D10906200144576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBE914AC2D10906200144576 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DBE914AD2D10906200144576 /* MovieAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAppApp.swift; sourceTree = "<group>"; };
+		DBE914BD2D10920700144576 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		DBE914BF2D10926600144576 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
+		DBE914C12D1092B400144576 /* MovieApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieApiService.swift; sourceTree = "<group>"; };
+		DBE914C32D10933700144576 /* MovieRepositoryImplementation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepositoryImplementation.swift; sourceTree = "<group>"; };
+		DBE914C52D10936B00144576 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
+		DBE914C72D1093B100144576 /* MovieListViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewItem.swift; sourceTree = "<group>"; };
+		DBE914CD2D1098AA00144576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -118,12 +131,12 @@
 		DBE914AE2D10906200144576 /* MovieApp */ = {
 			isa = PBXGroup;
 			children = (
+				DBE914CD2D1098AA00144576 /* Info.plist */,
 				DBE914B62D10912800144576 /* Data */,
 				DBE914B32D10908F00144576 /* Presentation */,
 				DBE914A82D10906200144576 /* Domain */,
 				DBE914AA2D10906200144576 /* Preview Content */,
 				DBE914AB2D10906200144576 /* Assets.xcassets */,
-				DBE914AC2D10906200144576 /* ContentView.swift */,
 				DBE914AD2D10906200144576 /* MovieAppApp.swift */,
 			);
 			path = MovieApp;
@@ -140,6 +153,7 @@
 		DBE914B42D1090E900144576 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DBE914BD2D10920700144576 /* Movie.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -147,6 +161,7 @@
 		DBE914B52D1090F000144576 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				DBE914BF2D10926600144576 /* MovieRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -163,6 +178,7 @@
 		DBE914B72D10913F00144576 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				DBE914C12D1092B400144576 /* MovieApiService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -170,6 +186,7 @@
 		DBE914B82D10914700144576 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				DBE914C32D10933700144576 /* MovieRepositoryImplementation.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -186,6 +203,8 @@
 		DBE914BA2D10917F00144576 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				DBE914AC2D10906200144576 /* ContentView.swift */,
+				DBE914C72D1093B100144576 /* MovieListViewItem.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,6 +212,7 @@
 		DBE914BC2D1091A300144576 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				DBE914C52D10936B00144576 /* MovieListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -340,8 +360,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DBE914C82D1093B100144576 /* MovieListViewItem.swift in Sources */,
+				DBE914C02D10926600144576 /* MovieRepository.swift in Sources */,
+				DBE914C22D1092B400144576 /* MovieApiService.swift in Sources */,
 				DBE914B12D10906200144576 /* ContentView.swift in Sources */,
+				DBE914C62D10936B00144576 /* MovieListViewModel.swift in Sources */,
 				DBE914B22D10906200144576 /* MovieAppApp.swift in Sources */,
+				DBE914C42D10933700144576 /* MovieRepositoryImplementation.swift in Sources */,
+				DBE914BE2D10921700144576 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,6 +531,7 @@
 				DEVELOPMENT_TEAM = H2HJGXYYBR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MovieApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -534,6 +561,7 @@
 				DEVELOPMENT_TEAM = H2HJGXYYBR;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MovieApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
