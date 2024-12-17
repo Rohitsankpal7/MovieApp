@@ -28,7 +28,9 @@ struct ContentView: View {
                     }
                 } else {
                     List(viewModel.movies) { movie in
-                        MovieItemView(movie: movie)
+                        NavigationLink(destination: MovieDetailView(movie: movie)) {
+                            MovieItemView(movie: movie)
+                        }
                     }
                 }
             }

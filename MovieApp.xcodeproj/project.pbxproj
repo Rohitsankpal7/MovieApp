@@ -17,6 +17,7 @@
 		DBE914C42D10933700144576 /* MovieRepositoryImplementation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE914C32D10933700144576 /* MovieRepositoryImplementation.swift */; };
 		DBE914C62D10936B00144576 /* MovieListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE914C52D10936B00144576 /* MovieListViewModel.swift */; };
 		DBE914C82D1093B100144576 /* MovieListViewItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE914C72D1093B100144576 /* MovieListViewItem.swift */; };
+		DBE914E72D11CC4E00144576 /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE914E62D11CC4E00144576 /* MovieDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		DBE914C52D10936B00144576 /* MovieListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewModel.swift; sourceTree = "<group>"; };
 		DBE914C72D1093B100144576 /* MovieListViewItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListViewItem.swift; sourceTree = "<group>"; };
 		DBE914CD2D1098AA00144576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		DBE914E62D11CC4E00144576 /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -205,6 +207,7 @@
 			children = (
 				DBE914AC2D10906200144576 /* ContentView.swift */,
 				DBE914C72D1093B100144576 /* MovieListViewItem.swift */,
+				DBE914E62D11CC4E00144576 /* MovieDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 				DBE914C82D1093B100144576 /* MovieListViewItem.swift in Sources */,
 				DBE914C02D10926600144576 /* MovieRepository.swift in Sources */,
 				DBE914C22D1092B400144576 /* MovieApiService.swift in Sources */,
+				DBE914E72D11CC4E00144576 /* MovieDetailView.swift in Sources */,
 				DBE914B12D10906200144576 /* ContentView.swift in Sources */,
 				DBE914C62D10936B00144576 /* MovieListViewModel.swift in Sources */,
 				DBE914B22D10906200144576 /* MovieAppApp.swift in Sources */,

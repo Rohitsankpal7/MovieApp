@@ -25,8 +25,12 @@ struct MovieItemView: View {
                 Text(movie.title)
                     .font(.headline)
                     .lineLimit(2)
-                Text("Rating: \(String(format: "%.1f", movie.voteAverage))")
-                    .font(.subheadline)
+                HStack {
+                    Text("Rating: \(String(format: "%.1f", movie.voteAverage))")
+                        .font(.subheadline)
+                    Image(systemName: "star.fill")
+                        .foregroundColor(.yellow)
+                }
                 Text("Release: \(movie.releaseDate)")
                     .font(.subheadline)
             }
