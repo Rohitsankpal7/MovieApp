@@ -103,17 +103,3 @@ final class MovieListViewModelTests: XCTestCase {
         XCTAssertTrue(sut.movies.isEmpty) // Should not load movies when already loading
     }
 }
-
-// MARK: - Mock Repository
-
-class MockMovieRepository: MovieRepository {
-    var mockMovies: [Movie] = []
-    var mockError: Error?
-    
-    func getMovies() async throws -> [Movie] {
-        if let error = mockError {
-            throw error
-        }
-        return mockMovies
-    }
-}
